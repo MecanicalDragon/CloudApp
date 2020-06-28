@@ -12,10 +12,10 @@
     </parent>
 
     <groupId>net.medrag</groupId>
-    <artifactId>fake-hello-service</artifactId>
+    <artifactId>hello-service-common</artifactId>
     <version>0.1</version>
-    <name>fake-hello-service</name>
-    <description>Service, that emulates the second instance of hello-service</description>
+    <name>hello-service-common</name>
+    <description>Common classes for Hello-Services</description>
 
     <properties>
         <java.version>1.8</java.version>

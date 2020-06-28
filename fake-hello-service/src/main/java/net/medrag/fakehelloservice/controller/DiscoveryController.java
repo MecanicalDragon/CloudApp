@@ -1,4 +1,4 @@
-package net.medrag.helloservice.controller;
+package net.medrag.fakehelloservice.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;

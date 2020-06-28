@@ -1,4 +1,4 @@
-package net.medrag.helloservice.service;
+package net.medrag.fakehelloservice.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

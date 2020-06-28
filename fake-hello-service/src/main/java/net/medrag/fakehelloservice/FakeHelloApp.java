@@ -1,4 +1,4 @@
-package net.medrag.helloservice;
+package net.medrag.fakehelloservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

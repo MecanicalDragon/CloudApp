@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Account Service Statistics</title>
+</head>
+<body>
+<div id="main" style="display: flex">
+    <label for="msgText">Rabbit message:</label>
+    <br/>
+    <input type="text" id="msgText">
+</div>
+<div style="padding: 10px;">
+    <button onclick="postMsg()">POST</button>
+</div>
+<p id="msgResult"></p>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        console.log("ready");
+    });
+
+    function sleep (ms){
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function postMsg() {
+        let msg = document.getElementById("msgText").value;
+        let location = window.location.toString();
+        let url = new URL(location.substring(0, location.lastIndexOf("/")) + '/postMessage');
+        url.search = new URLSearchParams({msg: msg});
+        fetch(url, {method: 'POST'}).then(async function (response) {
+            if (response.status === 200) {
+                document.getElementById("msgResult").innerText = "Message has been posted!"
+            } else {
+                document.getElementById("msgResult").innerText = "Message has NOT been posted!"
+            }
+            await sleep(1500);
+            document.getElementById("msgResult").innerText = ""
+        })
+    }
+</script>
+</body>
+</html>

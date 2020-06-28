@@ -1,7 +1,7 @@
-package net.medrag.helloservice.controller;
+package net.medrag.fakehelloservice.controller;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import net.medrag.helloservice.service.PropertyService;
+import net.medrag.fakehelloservice.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

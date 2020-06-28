@@ -17,7 +17,7 @@
     <version>0.1</version>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <spring-cloud.version>Hoxton.M3</spring-cloud.version>
     </properties>
 
@@ -25,9 +25,10 @@
         <module>eureka</module>
         <module>central-conf</module>
         <module>hello-service</module>
+        <module>fake-hello-service</module>
         <module>zuul-service</module>
         <module>lb-service</module>
-        <module>fake-hello-service</module>
+        <module>amqp-sender</module>
     </modules>
 
 </project>
