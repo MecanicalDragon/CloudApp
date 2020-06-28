@@ -24,6 +24,7 @@
     <modules>
         <module>eureka</module>
         <module>central-conf</module>
+        <module>hello-service-common</module>
         <module>hello-service</module>
         <module>fake-hello-service</module>
         <module>zuul-service</module>

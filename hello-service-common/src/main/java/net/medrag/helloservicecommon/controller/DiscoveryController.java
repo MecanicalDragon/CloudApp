@@ -1,4 +1,4 @@
-package net.medrag.helloservice.controller;
+package net.medrag.helloservicecommon.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
+ * Instantiates possibility to survey all instances of service with this request.
  * {@author} Stanislav Tretyakov
  * 06.02.2020
  */
